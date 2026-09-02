@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#14243b">
+  <meta name="description" content="Convite de casamento de Diogo e Samira — 07 de novembro de 2026.">
+  <title>Diogo & Samira | 07.11.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="invitation-gate" id="invitation-gate" aria-label="Abertura do convite">
+    <div class="gate__paper gate__paper--top"></div>
+    <div class="gate__paper gate__paper--bottom"></div>
+    <div class="gate__content">
+      <span class="gate__eyebrow">Você recebeu um convite</span>
+      <div class="gate__names">Diogo <i>&</i> Samira</div>
+      <div class="gate__date">07 · 11 · 2026</div>
+    </div>
+    <div class="ribbon ribbon--left" aria-hidden="true"></div>
+    <div class="ribbon ribbon--right" aria-hidden="true"></div>
+    <button class="wax-seal" id="wax-seal" type="button" aria-label="Arraste para cima para abrir o convite">
+      <span class="wax-seal__rim"></span>
+      <span class="wax-seal__letters">D<i>&</i>S</span>
+    </button>
+    <div class="gate__hint" id="gate-hint"><span>↑</span> Puxe o selo para abrir</div>
+  </div>
+  <div class="page-progress" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__shade"></div>
+      <div class="hero__content reveal">
+        <span class="eyebrow">Nosso casamento</span>
+        <div class="monogram" aria-hidden="true">D <i>&</i> S</div>
+        <h1>Diogo <span>&</span> Samira</h1>
+        <div class="ornament"><span></span> 07 · 11 · 2026 <span></span></div>
+        <p class="hero__invitation">Com a bênção de Deus e de nossas famílias,<br>convidamos você para celebrar o nosso amor.</p>
+        <a class="scroll-cue" href="#mensagem" aria-label="Continuar convite"><span></span></a>
+      </div>
+    </section>
+
+    <section class="verse section" id="mensagem">
+      <div class="section__inner narrow reveal">
+        <span class="flourish">❦</span>
+        <blockquote>“Para que todos vejam, e saibam, e considerem, e juntamente entendam que a mão do Senhor fez isto.”</blockquote>
+        <cite>Isaías 41:20</cite>
+      </div>
+    </section>
+
+    <section class="date-section section section--navy">
+      <div class="section__inner reveal">
+        <span class="eyebrow eyebrow--light">Reserve esta data</span>
+        <div class="date-lockup">
+          <span>Sábado</span>
+          <strong>07</strong>
+          <span>Novembro<br>2026</span>
+        </div>
+        <div class="time-pill">às 19 horas</div>
+        <p class="count-label">Faltam</p>
+        <div class="countdown" aria-label="Contagem regressiva para o casamento">
+          <div><strong id="days">000</strong><span>dias</span></div>
+          <div><strong id="hours">00</strong><span>horas</span></div>
+          <div><strong id="minutes">00</strong><span>min</span></div>
+          <div><strong id="seconds">00</strong><span>seg</span></div>
+        </div>
+        <button class="button button--copper" id="save-date" type="button">Adicionar ao calendário</button>
+      </div>
+    </section>
+
+    <section class="locations section" id="locais">
+      <div class="section__inner">
+        <header class="section-heading reveal">
+          <span class="eyebrow">Onde tudo acontecerá</span>
+          <h2>Os locais</h2>
+        </header>
+        <article class="location-card reveal">
+          <div class="location-card__number">01</div>
+          <div>
+            <span class="location-card__type">Cerimônia civil</span>
+            <h3>Cartório São Luís</h3>
+            <address>Estrada de Itapecerica, 305<br>Vila das Belezas · São Paulo — SP</address>
+            <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Estrada+de+Itapecerica+305+Vila+das+Belezas+São+Paulo+SP">Ver no mapa <span>↗</span></a>
+          </div>
+        </article>
+        <article class="location-card location-card--featured reveal">
+          <div class="location-card__number">02</div>
+          <div>
+            <span class="location-card__type">Celebração · 19h</span>
+            <h3>Sítio em Ibiúna</h3>
+            <address>Estrada do Marco, 167<br>Granja Votorantim · Ibiúna — SP</address>
+            <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Estrada+do+Marco+167+Granja+Votorantim+Ibiúna+SP">Como chegar <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story section section--sand" id="fotos">
+      <div class="section__inner reveal">
+        <span class="eyebrow">Uma história escrita por Deus</span>
+        <h2>Nossos momentos</h2>
+        <div class="photo-frame" aria-label="Espaço reservado para foto dos noivos">
+          <div class="photo-frame__initials">D <i>&</i> S</div>
+          <p>O melhor capítulo<br>ainda está por vir.</p>
+        </div>
+        <p class="story__copy">Entre encontros, sonhos e orações, escolhemos caminhar juntos para sempre.</p>
+      </div>
+    </section>
+
+    <section class="gift section" id="presente">
+      <div class="section__inner narrow reveal">
+        <span class="eyebrow">Nosso maior presente é ter você conosco</span>
+        <h2>Se quiser nos presentear</h2>
+        <p>Para quem desejar contribuir com o início da nossa nova história, preparamos uma opção simples e carinhosa.</p>
+        <div class="pix-card">
+          <div id="qrcode" class="qr" aria-label="QR Code da chave Pix"><span>Gerando<br>QR Code…</span></div>
+          <span class="pix-label">Chave Pix · celular</span>
+          <strong id="pix-key">(11) 99959-0976</strong>
+          <button class="button button--navy" id="copy-pix" type="button">Copiar chave Pix</button>
+          <small>Diogo & Samira</small>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content reveal">
+        <span>Esperamos por você</span>
+        <h2>Diogo <i>&</i> Samira</h2>
+        <p>07 · 11 · 2026</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Chave Pix copiada!</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
