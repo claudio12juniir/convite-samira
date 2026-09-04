@@ -1,4 +1,4 @@
-const weddingDate = new Date('2026-11-07T11:00:00-03:00');
+const weddingDate = new Date('2026-11-07T12:00:00-03:00');
 const pad = (n, size = 2) => String(Math.max(0, n)).padStart(size, '0');
 
 const gate = document.getElementById('invitation-gate');
@@ -78,7 +78,7 @@ addEventListener('scroll', () => {
 }, { passive: true });
 
 document.getElementById('save-date').addEventListener('click', () => {
-  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Diogo e Samira//Casamento//PT-BR','BEGIN:VEVENT','UID:diogo-samira-07112026@convite','DTSTAMP:20260901T120000Z','DTSTART:20261107T140000Z','DTEND:20261107T210000Z','SUMMARY:Casamento de Diogo e Samira','DESCRIPTION:Cartório às 10h. Recepção no sítio às 11h. Esperamos você para celebrar conosco!','LOCATION:Estrada do Marco 167, Granja Votorantim, Ibiúna - SP','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Diogo e Samira//Casamento//PT-BR','BEGIN:VEVENT','UID:diogo-samira-07112026@convite','DTSTAMP:20260901T120000Z','DTSTART:20261107T150000Z','DTEND:20261107T210000Z','SUMMARY:Casamento de Diogo e Samira','DESCRIPTION:Cartório às 10h. Recepção no sítio às 12h. Esperamos você para celebrar conosco!','LOCATION:Estrada do Marco 167, Granja Votorantim, Ibiúna - SP','END:VEVENT','END:VCALENDAR'].join('\r\n');
   const link = document.createElement('a');
   link.href = URL.createObjectURL(new Blob([ics], {type:'text/calendar;charset=utf-8'}));
   link.download = 'casamento-diogo-e-samira.ics'; link.click(); URL.revokeObjectURL(link.href);
