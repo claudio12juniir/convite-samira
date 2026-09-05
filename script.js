@@ -17,6 +17,7 @@ function openInvitation() {
   document.body.classList.remove('gate-locked');
   setTimeout(() => gate.classList.add('is-open'), 900);
 }
+document.getElementById('open-invitation').addEventListener('click', openInvitation);
 corner.addEventListener('pointerdown', event => {
   dragging = true;
   dragStart = { x: event.clientX, y: event.clientY };
